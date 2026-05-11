@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main(){
+	int n, i = 2;
+
+    printf("Numero: ");
+    scanf("%d", &n);
+
+    
+    if (n < 2) {
+        printf("nao eh primo\n");
+        return 0; 
+    }
+
+    
+    while (i < n) {
+        if (n % i == 0) {
+            printf("nao eh primo\n");
+            return 0; 
+        }
+        i++; 
+    }
+
+    
+    printf("eh primo\n");
+
+	
+return 0;
+}
