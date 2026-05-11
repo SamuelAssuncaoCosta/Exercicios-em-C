@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+	int i = 1;
+	float h, maior = 0, menor = 3;
+
+	while (i <= 15){
+		printf("Insira a altura: ");
+		scanf("%f", &h);
+		
+		i++;
+	if (h > maior){
+		maior = h;
+	} if (h < menor){
+		menor = h;
+	}
+	}
+	
+	printf("maior altura: %f\n", maior);
+	printf("menor altura: %f\n", menor);
+return 0;
+}
+
+
