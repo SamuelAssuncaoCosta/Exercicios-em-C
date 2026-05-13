@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main(){
+	int senha;
+	char usuario;
+	
+	printf("insira o tipo de usuario: ");
+	scanf("%s", &usuario);
+	printf("insira sua senha: ");
+	scanf("%d", &senha);
+	
+	if (usuario == 'a'){
+		if (senha== 1234){
+			printf("acesso total concedido");
+			
+		} else{
+			printf("senha incorreta para admim");
+		}
+	}else if (usuario == 'c'){
+		if(senha == 0000){
+			printf("acesso limitado concedido");
+	
+		}else{
+			printf("senha incorreta para convidado");
+		}
+	} else if (usuario != 'a' || usuario != 'c' ){
+		printf("usuario não encontrado");
+		
+	} 
+return 0;
+}
+
+
