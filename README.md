@@ -5,3 +5,4 @@ Repositório com exercícios e práticas desenvolvidos durante meus estudos de p
 ## Conteúdo
 - Exercícios iniciais
 - Loops
+- Vetores
