@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main() {
+    float valor, soma = 0;
+    int pos = 0, neg = 0, total = 0;
+
+    printf("Digite um valor (0 para sair): ");
+    scanf("%f", &valor);
+
+    while (valor != 0) {
+        soma = soma + valor; 
+        total++;             
+        if (valor > 0) {
+            pos++; 
+        } else {
+            neg++; 
+        }
+
+        printf("Digite o proximo valor (0 para sair): ");
+        scanf("%f", &valor);
+    }
+
+    
+    if (total > 0) {
+        printf("\n--- Resultados ---\n");
+        printf("Media aritmetica: %.2f\n", soma / total);
+        printf("Quantidade de positivos: %d\n", pos);
+        printf("Quantidade de negativos: %d\n", neg);
+        
+       
+        printf("Percentual de positivos: %.2f%%\n", ((float)pos / total) * 100);
+        printf("Percentual de negativos: %.2f%%\n", ((float)neg / total) * 100);
+    } else {
+        printf("Nenhum valor foi digitado.\n");
+    }
+return 0;
+}
+
+
