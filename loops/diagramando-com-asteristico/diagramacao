@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+	int l,aste,i,j;
+	
+	printf("numero de linhas (M): ");
+	scanf("%d", &l);
+	printf("numero de * (N): ");
+	scanf("%d", &aste);
+	
+	for(i=1; i<=l; i++){
+		
+		for(j=1; j<= aste; j++){
+			printf("*\t");
+			
+		}
+	printf("\n");
+	}
+	
+
+return 0;
+}
+
+
