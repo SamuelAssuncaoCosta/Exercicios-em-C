@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int n, i = 1;
+    float num = 1, soma = 0;
+
+    printf("Digite o valor de n (n > 3): ");
+    scanf("%d", &n);
+
+    if (n > 3) {
+        do {
+            if (i % 2 == 1) {
+                // Se a posição for ímpar (1º, 3º...), soma
+                soma = soma + (num / i);
+            } else {
+                // Se a posição for par (2º, 4º...), subtrai
+                soma = soma - (num / i);
+            }
+            
+            num = num + 2; // Numerador sobe de 2 em 2
+            i++;           // Denominador sobe de 1 em 1
+        } while (i <= n);
+
+        printf("O resultado da soma da serie G eh: %.2f\n", soma);
+    } else {
+        printf("Por favor, digite um n maior que 3.\n");
+    }
+
+    return 0;
+}
