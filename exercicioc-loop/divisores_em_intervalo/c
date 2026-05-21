@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int x, y, i;
+
+    printf("X (menor numero): ");
+    scanf("%d", &x);
+    printf("Y (maior numero): ");
+    scanf("%d", &y);
+
+    if (x > y) {
+        printf("Valores invalidos\n");
+    } else {
+        printf("Divisores de %d no intervalo:\n", x);
+        for (i = x; i <= y; i++) {
+            if (x % i == 0) {
+                printf("%d ", i);
+            }
+        }
+
+        printf("\nDivisores de %d no intervalo:\n", y);
+        for (i = x; i <= y; i++) {
+            if (y % i == 0) {
+                printf("%d ", i);
+            }
+        }
+    }
+
+    return 0;
+}
