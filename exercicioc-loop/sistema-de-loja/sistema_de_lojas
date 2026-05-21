@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main(){
+	float compras_vista = 0, compras_prazo=0, compras_total, valor = 0, valor_total = 0, prestacao = 0;
+	char codigo;
+	int i;
+	
+	
+	for(i = 1; ; i++){
+	
+	printf("insira o codigo de compra: ");
+	scanf(" %c", &codigo);
+	if (codigo != 'v' && codigo != 'V' && codigo != 'p' && codigo != 'P' && codigo != 's' && codigo != 'S'){
+		printf("Codigo invalido");
+		continue;
+	}
+	if (codigo == 's' || codigo == 'S'){
+		printf("programa encerrado");
+	break;
+	}
+	printf("insira o valor da compra: ");
+	scanf("%f", &valor);
+	
+	if (valor <=0){
+		printf("valor invalido");
+		continue;
+	}
+		
+	if (codigo == 'v' || codigo == 'V') {
+            compras_vista += valor;
+    } else if (codigo == 'p' || codigo == 'P') {
+            compras_prazo += valor;
+    }
+
+    valor_total += valor;
+	
+	}
+	prestacao = compras_prazo / 3;
+	
+	printf("valor total a vista: %2f", compras_vista);
+	printf("valor total a prazo: %2f", compras_prazo);
+	printf("valor total de compras: %2f", valor_total);
+	printf("primeira prestacao da compra a prazo: %2f", prestacao);
+	
+	
+
+return 0;
+}
+
+
