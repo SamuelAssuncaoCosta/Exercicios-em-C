@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int n, linha = 1, coluna;
+
+    printf("Digite um numero entre 1 e 9: ");
+    scanf("%d", &n);
+
+    if (n >= 1 && n <= 9) {
+        do {
+            coluna = 1;
+            
+            do {
+                printf("%d", linha);
+                coluna++;
+            } while (coluna <= linha); 
+
+            printf("\n"); 
+            linha++;
+            
+        } while (linha <= n);
+    } else {
+        printf("Numero fora do intervalo permitido.");
+    }
+
+    return 0;
+}
