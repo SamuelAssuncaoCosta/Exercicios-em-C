@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+	int num, linha = 1, coluna;
+	
+	printf("insira um numero entre 1 e 9: ");
+	scanf("%d", num);
+	
+	if (n>=1 && <=9){
+		do{
+			
+		coluna = 1;
+		do{
+			printf("%d", linha);
+			coluna++;
+		}while (coluna <=linha);
+		
+		printf("\n");
+		linha++;
+	}while (linha <= n);
+	
+}else {
+	printf("numero fora do intervalo");
+}
+	
+	
+
+return 0;
+}
+
+
