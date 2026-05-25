@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+	int n, ni, pni = 1, snp = 0;
+	
+	do {
+    printf("insira o numero: ");
+    scanf("%d", &n );
+    
+   if (n != 0) { 
+            ni = n % 2;
+            if (ni == 1) {
+                pni = pni * n;
+                } else {
+                snp = snp + n;
+            }
+        }
+} while (n!=0);
+
+printf("produto dos numeros impares = %d\n", pni);
+printf("soma dos numeros pares: %d\n", snp);
+
+
+return 0;
+}
+
+
