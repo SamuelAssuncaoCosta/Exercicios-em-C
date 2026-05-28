@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+	int v[50],i,soma=0;
+	float med;
+	
+	for(i=0; i<50 ;i++){
+		printf("insira o numero: ");
+		scanf("%d", &v[i]);
+		soma += v[i];
+	}
+	med = (float)soma/50;
+	printf("media entre os numeros: %.2f \n", med);
+	printf("valores acima da media: \n");
+	for(i=0; i<50 ;i++){
+		if(v[i] > med)
+		printf("%d\n", v[i]);
+	}
+	
+
+return 0;
+}
+
+
