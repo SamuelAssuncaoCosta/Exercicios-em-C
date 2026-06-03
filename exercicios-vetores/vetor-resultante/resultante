@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+	int va[10], vb[10],i,vc[20];
+	
+	for(i=0;i<10;i++){
+		scanf("%d", &va[i]);
+	}
+	for(i=0;i<10;i++){
+		scanf("%d", &vb[i]);
+	}
+	for(i=0; i<10; i++){
+        vc[i] = va[i];
+    }
+
+    for(i=0; i<10; i++){
+        vc[i + 10] = vb[i]; 
+    }
+    
+    printf("vetor resultante:\n");
+    for(i=0;i<20;i++){
+    	printf("%d\n", vc[i]);
+	}
+
+
+
+return 0;
+}
+
+
