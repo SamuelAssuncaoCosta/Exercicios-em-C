@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+	int v[50],i;
+	
+	for(i=0; i<50 ;i++){
+		printf("insira o numero: ");
+		scanf("%d", &v[i]);
+	}
+	for(i=0; i<50 ;i++){
+		if(v[i] > 0){
+			printf("%d", v[i]);
+		}
+	}
+	
+
+return 0;
+}
+
+
