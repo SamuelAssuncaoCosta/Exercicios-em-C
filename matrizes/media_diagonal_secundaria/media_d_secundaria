@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float M[10][10];
+    float soma = 0, media;
+    int i, j;
+
+    for(i = 0; i < 10; i++) {
+        for(j = 0; j < 10; j++) {
+            scanf("%f", &M[i][j]);
+        }
+    }
+
+    for(i = 0; i < 10; i++) {
+        soma += M[i][9 - i];
+    }
+
+    media = soma / 10;
+
+    printf("Media = %.2f", media);
+
+    return 0;
+}
