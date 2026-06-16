@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    float M[6][6];
+    float aux;
+    int i, j;
+
+    for(i = 0; i < 6; i++) {
+        for(j = 0; j < 6; j++) {
+            scanf("%f", &M[i][j]);
+        }
+    }
+
+    for(i = 0; i < 6; i++) {
+
+        aux = M[i][0];
+        M[i][0] = M[i][1];
+        M[i][1] = aux;
+
+        aux = M[i][2];
+        M[i][2] = M[i][3];
+        M[i][3] = aux;
+
+        aux = M[i][4];
+        M[i][4] = M[i][5];
+        M[i][5] = aux;
+    }
+
+    printf("\nMatriz modificada:\n");
+
+    for(i = 0; i < 6; i++) {
+        for(j = 0; j < 6; j++) {
+            printf("%.1f ", M[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
